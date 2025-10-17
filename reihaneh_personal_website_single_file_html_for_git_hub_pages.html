@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reihaneh Arjmandi — Personal Site</title>
+  <meta name="description" content="Reihaneh Arjmandi — philosophy, psychology, 4E cognition, tech & creative work." />
+  <style>
+    :root{
+      --bg:#ffffff; --fg:#111111; --muted:#4b5563; --ring:#e5e7eb; --accent:#0ea5e9; --card:#f8fafc;
+    }
+    @media (prefers-color-scheme: dark){
+      :root{ --bg:#0b0e13; --fg:#e5e7eb; --muted:#94a3b8; --ring:#1f2937; --accent:#38bdf8; --card:#0f141b; }
+      img{filter:brightness(0.95) contrast(1.05)}
+    }
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;margin:0;padding:0;line-height:1.6;background:var(--bg);color:var(--fg)}
+    header,footer{padding:20px;background:var(--card);text-align:center;border-bottom:1px solid var(--ring)}
+    footer{border-top:1px solid var(--ring);border-bottom:none}
+    main{max-width:900px;margin:auto;padding:20px}
+    h1,h2,h3{color:var(--fg)}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    section{margin-bottom:40px}
+    .photos{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px}
+    .photos img{width:100%;border-radius:10px;border:1px solid var(--ring)}
+    /* Cover banner */
+    .cover{position:relative;isolation:isolate}
+    .cover .img{height:min(48vh,520px);background:url('assets/images/cover.jpg') center/cover no-repeat;border-bottom:1px solid var(--ring)}
+    .cover .overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.35),rgba(0,0,0,.5));mix-blend:normal}
+    .cover .text{position:absolute;inset:auto 0 10%;text-align:center;color:#fff;padding:0 16px}
+    .cover h1{margin:0;font-size:clamp(26px,5vw,46px)}
+    .cover p{margin:8px 0 0;font-weight:600;opacity:.95}
+  .rtl{direction:rtl;text-align:right;font-family:'Vazirmatn',system-ui,-apple-system,Segoe UI,Roboto,Noto Sans Arabic,Noto Sans,sans-serif}
+    .poem{border:1px solid var(--ring);background:var(--card);padding:16px;border-radius:12px;margin:14px 0}
+    .poem h4{margin:0 0 8px}
+    .portrait{width:168px;height:168px;border-radius:50%;object-fit:cover;border:3px solid var(--ring);box-shadow:0 6px 18px rgba(0,0,0,.08)}
+    .about-flex{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Reihaneh Arjmandi</h1>
+    <p><em>“I act, therefore I am.”</em></p>
+  </header>
+  <!-- Cover banner -->
+  <section class="cover" aria-label="Cover image">
+    <div class="img" role="img" aria-label="Abstract, calm cityscape reflecting research, embodiment, and Glasgow"></div>
+    <div class="overlay" aria-hidden="true"></div>
+    <div class="text">
+      <h1>Reihaneh Arjmandi</h1>
+      <p>“I act, therefore I am.”</p>
+    </div>
+  </section>
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <div class="about-flex">
+        <img class="portrait" src="assets/images/reihaneh.jpg" alt="Portrait of Reihaneh Arjmandi" />
+        <div>
+          <p>I’m Reihaneh Arjmandi — a philosopher and psychologist interested in how mind, body, and world intertwine. I hold an MSc (Conversion) in Philosophy from the University of Glasgow (Merit) and a BSc in Psychology from Shahid Beheshti University (Distinction). My research explores embodied and 4E cognition, phenomenology, perception, and the philosophy of mind.</p>
+          <p class="small">Based in the UK • Second home: Glasgow</p>
+        </div>
+      </div>
+    </section>
+    <section id="research">
+      <h2>Academic Background</h2>
+      <ul>
+        <li><strong>MSc (Conversion) in Philosophy</strong>, University of Glasgow (2022–2023) — Thesis: <em>Can the cognitive gap be bridged?</em> | Advisor: Dr. Derek Brown | GPA: Merit</li>
+        <li><strong>BSc in Psychology</strong>, Shahid Beheshti University, Tehran (2016–2020) — Thesis: <em>Predicting Alexithymia based on executive functions and social cognition</em> | Advisor: Dr. Neda Nazarboland | GPA: 18.14/20 (Distinction)</li>
+      </ul>
+      <h3>Areas of Interest</h3>
+      <p>Philosophy of Mind, Phenomenology and Cognitive Science, 4E Cognition, Social Cognition, Empathy and Self</p>
+    </section>
+    <section id="experience">
+      <h2>Professional Experience</h2>
+      <ul>
+        <li><strong>Community Engagement Officer</strong>, Empower Women for Change, Glasgow (May 2025–Present)</li>
+        <li><strong>Community Heritage Leader</strong>, David Livingstone Center, Glasgow (May 2024–Present)</li>
+        <li><strong>Freelance Translator</strong>, Web Certain, UK (July 2024–Present)</li>
+        <li><strong>Translator & Transcriber</strong>, Naghde No Magazine, Iran (Sep 2023–Present)</li>
+        <li><strong>Private Tutor</strong>, Tehran, Iran (2017–2019) — Persian & Arabic literature, philosophy, and logic</li>
+      </ul>
+    </section>
+    <section id="awards">
+      <h2>Awards & Honors</h2>
+      <ul>
+        <li>Mangoletsi-Potts Award (2022) — Leeds School of Philosophy</li>
+        <li>International Leadership Scholarship (2022) — University of Glasgow</li>
+        <li>Ranked 10th in Iran’s National University Entrance Exam (2016)</li>
+        <li>Fellowship Award — National Elites Foundation of Iran (2016)</li>
+      </ul>
+    </section>
+    <section id="skills">
+      <h2>Languages</h2>
+      <ul>
+        <li>Persian — Native</li>
+        <li>Arabic — Fluent</li>
+        <li>English — Fluent (IELTS 7.5)</li>
+      </ul>
+    </section>
+    <section id="hobbies">
+      <h2>Interests & Hobbies</h2>
+      <ul>
+        <li>Exploring consciousness, perception, and cognition</li>
+        <li>Long walks and photography</li>
+        <li>Museum and art gallery visits</li>
+        <li>Cooking and tea rituals</li>
+        <li>Learning new languages</li>
+      </ul>
+    </section>
+    <section id="glasgow">
+      <h2>My Second Home: Glasgow</h2>
+      <p>Glasgow has been my academic and emotional home — a city that blends creativity, intellect, and warmth. Here are some of my favorite spots:</p>
+      <div class="photos">
+        <img src="assets/images/glasgow-kelvingrove.jpg" alt="Kelvingrove Art Gallery & Museum">
+        <img src="assets/images/glasgow-riverside.jpg" alt="Riverside Museum">
+        <img src="assets/images/glasgow-cloisters.jpg" alt="University of Glasgow Cloisters">
+        <img src="assets/images/glasgow-botanics.jpg" alt="Botanic Gardens">
+      </div>
+    </section>
+    <section id="cv">
+      <h2>Academic CV</h2>
+      <p><a href="assets/Reihaneh_Arjmandi_CV.pdf" target="_blank">Download my full academic CV (PDF)</a></p>
+    </section>
+    
+    <!-- Persian Poetry -->
+    <section id="poetry">
+      <h2>اشعار من — My Poems</h2>
+      <p class="small">Persian poems reflecting on embodiment, perception, and self. (Right‑to‑left layout enabled.)</p>
+      <div class="poem rtl">
+        <h4>عنوان شعر اول</h4>
+        <p>اینجا متن شعر شما قرار می‌گیرد...<br>اینجا بند دوم شعر شما...</p>
+      </div>
+      <div class="poem rtl">
+        <h4>عنوان شعر دوم</h4>
+        <p>اینجا متن شعر شما قرار می‌گیرد...<br>اینجا بند دوم شعر شما...</p>
+      </div>
+      <details class="small">
+        <summary>Add translations?</summary>
+        <p>You can add English translations beneath each poem, outside of the <code>rtl</code> container.</p>
+      </details>
+    </section>
+    
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:reihaneh.arjmandi@gmail.com">reihaneh.arjmandi@gmail.com</a></p>
+      <p>Location: Glasgow, United Kingdom</p>
+      <p>Phone: +44 7398 530688</p>
+    </section>
+  </main>
+  <footer>
+    <p>© <span id="year"></span> Reihaneh Arjmandi — “I act, therefore I am.”</p>
+  </footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>
